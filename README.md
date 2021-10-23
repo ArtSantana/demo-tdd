@@ -6,35 +6,35 @@ Neste momento, gostaria de abordar especificamente o TDD e como uma proposta foc
 
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/bdkmq0t2fqijm8v3o5yu.jpeg)
 
-##CONCEITOS
+## Conceitos
 
 Sendo assim, é interessante entendermos o ciclo por trás do TDD para nos orientar ao nosso desenvolvimento guiado pelos testes.
 
-###1. Crie um caso de teste
+### 1. Crie um caso de teste
 
 Exatamente, com o TDD iremos sempre nossos testes antes mesmo de iniciarmos a implementação da funcionalidade que almejamos, consequentemente iremos escrever testes sem sofrer influência da implementação realizada no código. De tal maneira que podemos nos manter fiéis aos requisitos da feature que será desenvolvida. Note que no exemplo não iremos implementar nem ao menos o método que será utilizado.
 
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/j808uqo576jnudhuyrtt.png)
 
-###2. Rodando os testes
+### 2. Rodando os testes
 
 Visto que, no passo anterior nos escrevemos os testes antes de iniciarmos o desenvolvimento da nossa funcionalidade não será incomum que possivelmente sua aplicação não seja capaz de ser compilada, ou seja, mesmo que compile os testes irão falhar e será perfeitamente normal para este momento dessa forma temos certeza de que os testes estão funcionando.
 
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/1wnv4mtb02y8tzfgknaa.gif)
 
-###3. Implementação da solução
+### 3. Implementação da solução
 
 Neste momento, já podemos desenvolver a nossa funcionalidade de tal forma que passe nos testes realizados anteriormente, contudo, não necessariamente devemos terminar com os testes sendo bem sucedidos, pois em certos casos é normal que após esse etapa nós voltemos ao código para fazer uma refatoração a fim de melhorar a implementação utilizada
 
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/042cv47nbd21c1ps7skv.png)
 
-###4. Rodando os testes novamente
+### 4. Rodando os testes novamente
 
 Agora que temos nossos testes criados e a funcionalidade implementada todos nossos testes deverão passar, caso algum teste falhe, volte ao passo anterior e revise o código desenvolvido para que a aplicação cumpra os requisitos solicitados.
 
 ![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/17djqjxqa5ufqot6cz3r.gif)
 
-###5. Refatore a implementação
+### 5. Refatore a implementação
 
 Como dito anteriormente, aqui voltaremos a solução desenvolvida e tentaremos refatorar a solução que desenvolvemos com o objetivo de tornar o código mais legível e torná-lo menos custoso para receber manutenções ou adição de features. Sendo assim, é interessante buscarmos eliminar código duplicado, quebrar métodos/funções extensas em métodos menores. Contudo, no nosso exemplo não será necessário por se tratar de um caso muito simples mas em um contexto real e mais complexo não é incomum a necessidade de executar esse refactor.
 
